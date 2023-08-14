@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+  </head>
+  <body onkeydown="
+    if(event.key === 'r'){
+      playGame('rock');
+    } else if(event.key === 'p') {
+      playGame('paper');
+    } else if(event.key === 's') {
+      playGame('scissors');
+    } else if(event.key === 'Backspace') {
+      resetScore();
+    }
+  ">
+    <div class="header">
+      <h1>Rock Paper Scissors</h1>
+      <p>By: Kevin Kuriakose</p>
+    </div>
+    <div class="game">
+      <div class="buttons">
+        <button class="js-rock-button" onclick="
+          playGame('rock');
+        ">
+          <img src="icons/rock.png" class="move-icon">
+        </button>
+        <button class="js-rock-button" onclick="
+          playGame('paper');
+        ">
+          <img src="icons/paper.png" class="move-icon">
+        </button>
+        <button class="js-rock-button" onclick="
+          playGame('scissors');
+        ">
+          <img src="icons/scissors.png" class="move-icon">
+        </button>
+      </div>
+      <div class="game-summary">
+        <p class="js-moves-chosen">Press an Icon to Start!</p>
+        <p class="js-result">Don't Lose!</p>
+      </div>
+      <div class="score">
+        <p class="js-score"></p>
+      </div>
+      <div class="reset">
+        <button class="js-reset-button" onclick="
+          resetScore();
+        ">
+          Reset Score
+        </button>
+      </div>
+    </div>
+
+    <script src="rock-paper-scissors.js">
+    </script>
+  </body>
+</html>

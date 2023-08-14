@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(60, 200, 255);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: white;
+
+}
+.header {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  text-align: center;
+  border-radius: 10px;
+}
+.header h1 {
+  font-size: 48px;
+  padding: 10px;
+  margin: 10px 100px;
+  background-color: rgb(60, 200, 255);
+  border-radius: 10px;
+}
+.header p {
+  padding: 10px;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button {
+  border: 1px solid white;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: lightgray;
+  transition: 0.2s;
+}
+.buttons img {
+  height: 75px;
+  width: 75px;
+}
+.game-summary, 
+.score {
+  margin: 10px;
+  background-color: gray;
+  border-radius: 10px;
+}
+.game-summary p,
+.score p {
+  padding: 10px;
+}
+.reset button {
+  background-color: rgb(255, 91, 91);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.reset button:hover {
+  background-color: red;
+  transition: 0.2s;
+}
